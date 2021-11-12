@@ -12,7 +12,6 @@ export class ShopingListComponent implements OnInit {
     new Ingredient("Tomatos",10,"units")
   ]
 
-
   constructor() { }
 
   ngOnInit(): void {

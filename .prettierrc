@@ -1,0 +1,39 @@
+{
+  "cursorOffset": -1,
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": true,
+  "pluginSearchDirs": [],
+  "plugins": [],
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "rangeStart": 0,
+  "requirePragma": false,
+  "vueIndentScriptAndStyle": false,
+  "embeddedLanguageFormatting": "auto",
+  "printWidth": 100,
+  "singleQuote": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "semi": true,
+  "bracketSpacing": true,
+  "endOfLine": "crlf",
+  "trailingComma": "es5",
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "options": {
+        "printWidth": 50
+      }
+    },
+    {
+      "files": ["*.html"],
+      "options": {
+        "printWidth": 80,
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
+}
