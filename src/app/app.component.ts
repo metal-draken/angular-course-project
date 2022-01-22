@@ -1,16 +1,17 @@
-import { Component,  } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { AuthService } from './auth/auth.service';
+import { LoggingService } from './logging.service';
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.css']
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-	title = 'COURSE-PROJECT';
-	loadedFeature = "recipe"
-
-	onNavigate(feature:string) {
-		this.loadedFeature = feature
-	}
+export class AppComponent implements OnInit {
+  constructor(private authService: AuthService, private loggingService: LoggingService) {}
+  ngOnInit() {
+    this.authService.autologin();
+    this.loggingService.printLog('Hello from AppComponent ngOnInit');
+  }
 }
